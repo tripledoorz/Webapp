@@ -1,0 +1,165 @@
+$body:100%;
+$basePx:640;
+@function px($px){
+	@return $px/$basePx+rem;
+}
+*{margin:0;padding:0}
+body{
+	font-size:16px;
+}
+@media screen and(min-width:320px){
+	font-size:16px;
+}
+@media screen and(min-width:480px){
+	font-size:24px;
+}
+ul li{
+	list-style-type:none;
+}
+header, footer {
+  width: 100%;
+  position: absolute; 
+}
+header{
+	top:0;
+	background:#e4366b;
+	height:px(85);
+	font-size:px(40);
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	line-height:px(85);
+	button{
+		width:px(110);
+		height:px(55);
+		font-size:px(40);
+		position:absolute;
+		top:px(14);
+		right:px(13);
+		border-radius:20px;
+		border:1px solid #ccc;
+		background:url(../../img/login1.jpg) repeat-x;
+		background-size:100% 100%;
+		color:white;
+		outline:none;
+	}
+	span{
+		font-size:px(60);
+	}
+	p{
+		width:px(52);
+		height:px(56);
+		position:absolute;
+		left:px(18);
+		top:px(14);
+		background:url(../../img/login2.jpg) no-repeat center;
+		background-size:100% 100%;
+	}
+}
+section{
+	width:100%;
+	position:absolute;
+	top:px(85);
+	bottom:px(98);
+	font-size:px(16);
+	form{
+		width:100%;
+		height:px(420);
+		margin-top:px(64);
+		text-align:center;
+		.ipt{
+			width:px(540);
+			height:px(80);
+			padding-left:px(20);
+			font-size:px(50);
+			border-radius:30px;
+			outline:none;
+		}
+		button{
+			background:url(../../img/login3.jpg) repeat-x;
+			background-size:100% 100%;
+			width:px(560);
+			height:px(90);
+			font-size:px(40);
+			color:white;
+			border-radius:40px;
+			outline:none;
+		}
+		#userNum{
+			width:px(560);
+			height:px(50);		
+		}
+		#pass{
+			width:px(560);
+			height:px(50);	
+		}
+		#repass{
+			width:px(560);
+			height:px(50);	
+		}
+	}
+}
+footer{
+	bottom:0;
+	background:#999;
+	height:px(98);
+}
+#container{
+	width:100%;
+	position:absolute;
+	top:px(85);
+	bottom:px(98);
+}
+footer>ul{
+	width:100%;
+	height:px(98);
+}
+footer>ul>li{
+	padding-top:px(60);
+	width:20%;
+	height:px(38);
+	color:white;
+	float:left;
+	font-size:px(24);
+	text-align:center;
+}
+.red::before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	background:red;
+	display:inline-block;
+	width:20%;
+	height:px(5);
+}
+.g::before{
+	content:"";
+	position:absolute;
+	top:0px;
+	margin-left:px(-40);
+	background:red;
+	display:inline-block;
+	width:20%;
+	height:px(5);
+}
+footer>ul li:nth-child(1){
+	background:url(../../img/foot1.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(2){
+	background:url(../../img/foot2.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(3){
+	background:url(../../img/foot3.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(4){
+	background:url(../../img/foot4.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(5){
+	background:url(../../img/foot5.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}

@@ -1,0 +1,204 @@
+$body:100%;
+$basePx:640;
+@function px($px){
+	@return $px/$basePx+rem;
+}
+*{margin:0;padding:0}
+body{
+	font-size:16px;
+}
+@media screen and(min-width:320px){
+	font-size:16px;
+}
+@media screen and(min-width:480px){
+	font-size:24px;
+}
+ul li{
+	list-style-type:none;
+}
+header, footer {
+  width: 100%;
+  position: absolute; 
+}
+header{
+	top:0;
+	background:#e4366b;
+	height:px(85);
+	font-size:px(40);
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	line-height:px(85);
+	button{
+		width:px(110);
+		height:px(55);
+		font-size:px(40);
+		position:absolute;
+		top:px(14);
+		right:px(13);
+		border-radius:20px;
+		border:1px solid #ccc;
+		background:url(../../img/login1.jpg) repeat-x;
+		background-size:100% 100%;
+		color:white;
+	}
+	span{
+		font-size:px(60);
+	}
+	p{
+		width:px(52);
+		height:px(56);
+		position:absolute;
+		left:px(18);
+		top:px(14);
+		background:url(../../img/login2.jpg) no-repeat center;
+		background-size:100% 100%;
+	}
+}
+section{
+	width:100%;
+	position:absolute;
+	top:px(85);
+	bottom:px(98);
+	font-size:px(16);
+	background:#f7f7f7;
+	#user{
+		width:100%;
+		height:px(167);
+		margin-top:px(62);
+		#new{
+			width:px(456);
+			height:px(167);
+			margin-left:px(36);
+			display:-webkit-box;
+			display:-moz-box;
+			display:-ms-box;
+			div:nth-child(1){
+				background:url(../../img/self1.jpg) no-repeat center;
+				background-size:100% 100%;
+				width:px(166);
+				height:px(167);
+				-webkit-box-flex:1;
+				-moz-box-flex:1;
+				-ms-box-flex:1;
+			}
+			div:nth-child(2){
+				width:px(290);
+				height:px(167);
+				-webkit-box-flex:1;
+				-moz-box-flex:1;
+				-ms-box-flex:1;
+				#name{
+					font-size:24px;
+					margin-top:px(32);
+					margin-left:px(27);
+				}
+				button{
+					margin-top:px(20);
+					margin-left:px(27);
+					width:px(108);
+					height:px(55);
+					background:url(../../img/self2.jpg) repeat-x;
+					border-radius:10px;
+					outline:none;
+					color:white;
+					font-size:16px;
+				}
+			}
+		}
+	}
+	#list{
+		width:px(555);
+		height:px(550);
+		margin-top:px(83);
+		margin-left:px(36);
+		border:1px solid #ccc;
+		border-radius:10px;
+		background:white;
+		ul{
+			width:100%;
+			height:px(550);
+			li{
+				width:100%-px(25);
+				height:px(136);
+				border-bottom:1px solid #ccc;
+				line-height:px(136);
+				text-align:left;
+				padding-left:px(25);
+				font-size:24px;
+				font-weight:bold;
+				.iconfont{
+					position:absolute;
+					right:35px;
+				}
+			}
+			li:nth-child(4){
+				border:none;
+			}
+		}
+	}
+}
+footer{
+	bottom:0;
+	background:#999;
+	height:px(98);
+}
+#container{
+	width:100%;
+	position:absolute;
+	top:px(85);
+	bottom:px(98);
+}
+footer>ul{
+	width:100%;
+	height:px(98);
+}
+footer>ul>li{
+	padding-top:px(60);
+	width:20%;
+	height:px(38);
+	color:white;
+	float:left;
+	font-size:px(24);
+	text-align:center;
+}
+.red::before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	background:red;
+	display:inline-block;
+	width:20%;
+	height:px(5);
+}
+.g::before{
+	content:"";
+	position:absolute;
+	top:0px;
+	margin-left:px(-40);
+	background:red;
+	display:inline-block;
+	width:20%;
+	height:px(5);
+}
+footer>ul li:nth-child(1){
+	background:url(../../img/foot1.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(2){
+	background:url(../../img/foot2.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(3){
+	background:url(../../img/foot3.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(4){
+	background:url(../../img/foot4.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}
+footer>ul li:nth-child(5){
+	background:url(../../img/foot5.jpg) no-repeat center top;
+	background-size:px(60) px(60);
+}

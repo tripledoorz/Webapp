@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <title>list</title>
+    <link rel="stylesheet" href="../css/list/list.css">
+    <script src="../js/iscroll/src/iscroll.js"></script>
+    <script src="../js/zepto.min.js"></script>
+</head>
+<style>
+    body{
+        font-family:"微软雅黑";
+    }
+</style>
+<script>
+    window.onload = function(){
+         var fontSize = parseInt(document.documentElement.clientWidth)/10;
+        document.body.parentNode.style = "font-size:"+fontSize+"px";
+        var iscroll = new iScroll("container",{
+            checkDOMChanges: true
+        });
+    }
+</script>
+<script>
+   $(function(){
+        list();
+
+   })
+    function list(){
+        $.ajax({
+            type:"get",
+            url:"http://datainfo.duapp.com/shopdata/getclass.php",
+            dataType:"json",
+            success:function(e){
+                console.info(e);
+                for(var i=0; i< e.length; i++) {
+                    var list = $('<div class="first" addClassName="0">' + e[i].className + '<span><img src="../img/img/all.jpg" alt=""></span></div><div class="addGoods"></div>')
+                    $("article").append(list);
+                }
+            }
+        })
+
+        $("body").delegate(".first","click",function(){
+            $(this).find("span").toggleClass("rotate");
+            var addGoods = $(".addGoods");
+            var obj = this;
+            if($(obj).next().css("display")=="none"){
+                    if($(obj).attr("addClassName")=="0"){
+                        goods(obj);
+                        $(obj).attr("addClassName","1");
+                    }
+                    $(obj).next().show();
+                }else{
+                    $(obj).next().hide();
+            }
+
+        })
+        function goods(obj){
+            var goodsName = $(obj).text();
+            $.ajax({
+                type:"get",
+                url:"http://datainfo.duapp.com/shopdata/getGoods.php",
+                dataType:"jsonp",
+                success:function(e){
+                   console.info(e);
+                    for(var i=0;i< e.length;i++){
+                        if(e[i].className==goodsName){
+                            var goods = $('<dl><dt><img src="' + e[i].goodsListImg + '" alt="" /></dt><dd><p>'+e[i].goodsName+'</p><i>￥'+parseInt(e[i].price*e[i].discount/10)+'</i><b>￥'+e[i].price+'</b><br /><span>'+e[i].discount+'折</span><a href="#"><img src="../img/img/car_btn.jpg" alt=""></a></dd></dl>');
+                            $(obj).next().append(goods);
+                        }
+                    }
+                }
+            })
+        }
+    }
+</script>
+<body>
+    <header><img id="backHome" src="../img/img/backHome.jpg" alt=""><img id="logo" src="../img/img/logo.jpg" alt=""></header>
+    <div class="search">
+        <img src="../img/img/searchBg.jpg" alt=""><input id="searchInfo" type="text" placeholder="请输入搜索内容" />
+    </div>
+    <section id="container">
+        <article>
+            <div class="all">全部 <span><img src="../img/img/all.jpg" alt=""></span></div>
+            <!--<div class="first">衬衫 <a href="#"><img src="img/all.jpg" alt=""></a></div>-->
+
+        </article>
+    </section>
+    <script>
+        $(function(){
+            /*console.info($(".first").find("span").eq(0));*/
+
+        })
+    </script>
+    <footer>
+        <ul>
+            <li><a href="index.html"><img src="../img/img/home.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../img/img/listHtml.jpg" alt=""></a></li>
+            <li><a href="html/car.html"><img src="../img/img/shopping_car.jpg" alt=""></a></li>
+            <li><a href="html/self.html"><img src="../img/img/mine.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../img/img/more.jpg" alt=""></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

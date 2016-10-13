@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  font-size: 16px; }
+@media screen and (min-width: 480px) {
+  font-size: 24px; }
+ul li {
+  list-style-type: none; }
+
+header, footer {
+  width: 100%;
+  position: absolute; }
+
+header {
+  top: 0;
+  background: #e4366b;
+  height: 0.13281rem;
+  font-size: 0.0625rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.13281rem; }
+  header button {
+    width: 0.17188rem;
+    height: 0.08594rem;
+    font-size: 0.0625rem;
+    position: absolute;
+    top: 0.02188rem;
+    right: 0.02031rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: url(../../img/login1.jpg) repeat-x;
+    background-size: 100% 100%;
+    color: white; 
+    outline:none;}
+  header span {
+    font-size: 0.09375rem; }
+  header p {
+    width: 0.08125rem;
+    height: 0.0875rem;
+    position: absolute;
+    left: 0.02813rem;
+    top: 0.02188rem;
+    background: url(../../img/login2.jpg) no-repeat center;
+    background-size: 100% 100%; }
+
+section {
+  width: 100%;
+  position: absolute;
+  top: 0.13281rem;
+  bottom: 0.15313rem;
+  font-size: 0.025rem; }
+  section form {
+    width: 100%;
+    height: 0.65625rem;
+    margin-top: 0.1rem;
+    text-align: center; }
+    section form .ipt {
+      width: 0.84375rem;
+      height: 0.125rem;
+      padding-left: 0.03125rem;
+      font-size: 0.07813rem;
+      border-radius: 30px;
+      outline: none; }
+    section form div {
+      width: 0.875rem;
+      height: 0.05469rem;
+      text-align: left;
+      margin: 0 auto;
+      font-size: 0.04688rem;
+      margin-bottom: 0.07031rem; }
+      section form div .cb {
+        width: 0.04688rem;
+        height: 0.04688rem; }
+      section form div a {
+        margin-left: 0.06563rem;
+        color: #666; }
+    section form button {
+      background: url(../../img/login3.jpg) repeat-x;
+      background-size: 100% 100%;
+      width: 0.875rem;
+      height: 0.14063rem;
+      font-size: 0.0625rem;
+      color: white;
+      border-radius: 40px;
+      outline:none; }
+    section form #userNum {
+      width: 0.875rem;
+      height: 0.07813rem; }
+    section form #pass {
+      width: 0.875rem;
+      height: 0.07813rem; }
+
+footer {
+  bottom: 0;
+  background: #999;
+  height: 0.15313rem; }
+#container {
+  width: 100%;
+  position: absolute;
+  top: 0.13281rem;
+  bottom: 0.15313rem; }
+
+footer > ul {
+  width: 100%;
+  height: 0.15313rem; }
+
+footer > ul > li {
+  padding-top: 0.09375rem;
+  width: 20%;
+  height: 0.05938rem;
+  color: white;
+  float: left;
+  font-size: 0.0375rem;
+  text-align: center; }
+
+.red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  display: inline-block;
+  width: 20%;
+  height: 0.00781rem; }
+
+.g::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  margin-left: -0.0625rem;
+  background: red;
+  display: inline-block;
+  width: 20%;
+  height: 0.00781rem; }
+
+footer > ul li:nth-child(1) {
+  background: url(../../img/foot1.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(2) {
+  background: url(../../img/foot2.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(3) {
+  background: url(../../img/foot3.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(4) {
+  background: url(../../img/foot4.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(5) {
+  background: url(../../img/foot5.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+/*# sourceMappingURL=login.css.map */

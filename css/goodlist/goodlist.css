@@ -1,0 +1,217 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: '微软雅黑';
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  font-size: 16px; }
+@media screen and (min-width: 480px) {
+  font-size: 24px; }
+ul li {
+  list-style-type: none; }
+
+header, footer {
+  width: 100%;
+  position: absolute; }
+
+header {
+  top: 0;
+  background: #e4366b;
+  height: 0.13281rem;
+  font-size: 0.0625rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.13281rem; }
+
+footer {
+  bottom: 0;
+  background: #999;
+  height: 0.15313rem; }
+
+section {
+  width: 100%;
+  position: absolute;
+  top: 0.13281rem;
+  bottom: 0.15313rem; }
+
+footer > ul {
+  width: 100%;
+  height: 0.15313rem; }
+
+footer > ul > li {
+  padding-top: 0.09375rem;
+  width: 20%;
+  height: 0.05938rem;
+  color: white;
+  float: left;
+  font-size: 0.0375rem;
+  text-align: center; }
+
+.red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  display: inline-block;
+  width: 20%;
+  height: 0.00781rem; }
+
+.g::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  margin-left: -0.0625rem;
+  background: red;
+  display: inline-block;
+  width: 20%;
+  height: 0.00781rem; }
+
+footer > ul li:nth-child(1) {
+  background: url(../../img/foot1.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(2) {
+  background: url(../../img/foot2.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(3) {
+  background: url(../../img/foot3.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(4) {
+  background: url(../../img/foot4.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+footer > ul li:nth-child(5) {
+  background: url(../../img/foot5.jpg) no-repeat center top;
+  background-size: 0.09375rem 0.09375rem; }
+
+#ipt {
+  width: 100%;
+  height: 0.14063rem;
+  background: #52525a; }
+
+#ipt > input {
+  position: absolute;
+  width: 0.80781rem;
+  height: 0.08594rem;
+  margin-left: 0.05469rem;
+  margin-top: 0.02344rem;
+  border: none;
+  outline: none;
+  padding-left: 0.0625rem; }
+
+#ipt::before {
+  content: "";
+  width: 0.04688rem;
+  height: 0.08594rem;
+  position: absolute;
+  display: block;
+  background: white;
+  left: 0.03906rem;
+  top: 0.02344rem;
+  border-radius: 10px; }
+
+#ipt:after {
+  content: "";
+  width: 0.04688rem;
+  height: 0.08594rem;
+  position: absolute;
+  display: block;
+  background: white;
+  right: 0.05rem;
+  top: 0.02344rem;
+  border-radius: 20px; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  /* IE9*/
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.025rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 0.07031rem;
+  top: 0.04688rem;
+  z-index: 100; }
+
+#contain {
+  width: 100%;
+  line-height: 0.1375rem;
+  top: 0.14063rem;
+  bottom: 0rem;
+  font-size: 20px; }
+  #contain p::before {
+    content: "";
+    display: inline-block;
+    width: 0.03125rem; }
+  #contain .iconfont {
+    positoin: absolute;
+    top: 0.14063rem;
+    left: 0rem;
+    margin-left: 0.9375rem; }
+  #contain #container {
+    position: absolute;
+    width: 100%;
+    top: 0.27813rem;
+    bottom: 0rem; }
+    #contain #container ul {
+      position: absolute;
+      width: 100%; }
+      #contain #container ul li {
+        width: 100%;
+        height: 0.1375rem;
+        border-bottom: 1px solid #ccc; }
+        #contain #container ul li dl {
+          width: 100%;
+          height: 0.34375rem;
+          border-bottom: 1px solid black; }
+          #contain #container ul li dl dt {
+            position: absolute; }
+            #contain #container ul li dl dt img {
+              width: 0.27187rem;
+              height: 0.27187rem;
+              margin-bottom: 17px;
+              margin-left: 10px;
+              margin-top: 10px; }
+          #contain #container ul li dl dd {
+            padding-left: 120px;
+            height: 0.34375rem; }
+            #contain #container ul li dl dd .info {
+              font-size: 12px;
+              height: 0.17188rem;
+              line-height: 0.07813rem; }
+            #contain #container ul li dl dd .price {
+              font-size: 10px;
+              height: 0.17188rem;
+              line-height: 0.17188rem;
+              position: relative; }
+              #contain #container ul li dl dd .price .im {
+                background: url(../../img/goodcar.jpg) no-repeat;
+                width: 0.18281rem;
+                height: 0.08125rem;
+                background-size: 100% 100%;
+                position: absolute;
+                top: 0.03906rem;
+                left: 0.3125rem; }
+      #contain #container ul li:before {
+        content: "";
+        display: inline-block;
+        width: 0.0625rem; }
+
+.l {
+  overflow: hidden; }
+
+/*# sourceMappingURL=goodlist.css.map */

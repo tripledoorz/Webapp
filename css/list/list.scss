@@ -1,0 +1,217 @@
+$basePX:640;
+@function pxCount($px){
+  @return $px/$basePX*10rem;
+}
+*{
+  margin:0;
+  padding:0;
+
+}
+body{
+
+  width:100%;
+  height:100%;
+  header,footer{
+    width:100%;
+    position:absolute;
+  }
+}
+header{
+  top:0;
+  height:pxCount(86);
+  background:#E4366B;
+  border-top:1px solid #636363;
+  border-bottom:1px solid #262626;
+  #logo{
+    display:block;
+    width:pxCount(242);
+    height:pxCount(40);
+    position:absolute;
+    top:pxCount(25);
+    left:pxCount(196);
+  }
+  #backHome{
+    display:block;
+    width:pxCount(52);
+    height:pxCount(36);
+    position:absolute;
+    top:pxCount(25);
+    left:pxCount(20);
+  }
+}
+.search{
+  width:100%;
+  height:pxCount(86);
+  background:#52525A;
+  border-top:1px solid #636363;
+  border-bottom:1px solid #262626;
+  position:absolute;
+  top:pxCount(86);
+  img{
+    display:block;
+    width:pxCount(42);
+    height:pxCount(41);
+    position:absolute;
+    left:pxCount(45);
+    top:pxCount(21);
+    z-index:10;
+  }
+  #searchInfo{
+    padding-left:pxCount(75);
+    font-size:pxCount(24);
+    width:pxCount(515);
+    height:pxCount(55);
+    border-radius:pxCount(25);
+    /* margin-left:pxCount(25);
+     margin-top:pxCount(15);*/
+    border:0;
+    position:absolute;
+    top:pxCount(15);
+    left:pxCount(25);
+    outline:none;
+
+  }
+}
+
+section{
+  font-size:pxCount(40);
+  width:100%;
+  position:absolute;
+  top:pxCount(176);
+  bottom:pxCount(96);
+
+  div{
+    border-bottom:1px solid #aaa;
+    //border-top:#CBCBCB 1px solid;
+    span{
+      text-decoration:none;
+      display:inline-block;
+      float:right;
+      width:pxCount(29);
+      height:pxCount(29);
+      margin-top:pxCount(16);
+      -webkit-transition:transform 0.5s;
+      img{
+        float:right;
+        width:100%;
+        height:100%;
+        display:block;}
+    }
+  }
+  .rotate{
+    -webkit-transform:rotate(90deg);
+  }
+
+  .all{
+    padding:pxCount(20) pxCount(30) pxCount(0) pxCount(20);
+    height:pxCount(66);
+    border-bottom:2px solid #aaa;
+    span{
+      transform:rotate(90deg);
+    }
+  }
+  .first{
+    padding:pxCount(20) pxCount(30) pxCount(0) pxCount(40);
+    height:pxCount(66);
+  }
+  .addGoods{
+    width:100%;
+    overflow:hidden;
+    display:none;
+    dl{
+      padding:pxCount(20) pxCount(0) pxCount(20) pxCount(15);
+      width:pxCount(625);
+      height:pxCount(180);
+      border-top:1px solid #ACAAAB;
+      border-bottom:1px solid #282828;
+
+      dt{
+        width:pxCount(170);
+        height:pxCount(170);
+        border:pxCount(1) solid #C6C6C6;
+        float:left;
+        img{
+          width:pxCount(170);
+          height:pxCount(170);
+        }
+      }
+      dd{
+        width:pxCount(395);
+        height:pxCount(200);
+        margin-left:pxCount(15);
+        float:left;
+        font-size:pxCount(28);
+        p{
+          margin:pxCount(10) 0;
+
+        }
+        i{
+          font-style:normal;
+          font-size:pxCount(32);
+          color:#F42A74;
+          margin-right:pxCount(20);
+        }
+        b{
+          font-weight:normal;
+          font-size:pxCount(20);
+          color:#BCBABB;
+          text-decoration:line-through;
+        }
+        span{
+          font-size:pxCount(24);
+          padding-left:pxCount(10);
+          display:inline-block;
+          float:left;
+          width:pxCount(100);
+
+        }
+        a{
+          display:inline-block;
+          width:pxCount(118);
+          height:pxCount(52);
+          /*text-align:center;
+          line-height:pxCount(52);
+          color:#fff;
+          font-family:"shopping" !important;*/
+          /* font-size:pxCount(40);font-style:normal;*/
+          float:right;
+          text-decoration:none;
+          border-radius:pxCount(10);
+          margin-top:pxCount(-20);
+          margin-right:pxCount(20);
+          img{
+            display:block;
+            width:100%;
+            height:100%;
+
+          }
+          overflow:hidden;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  height:pxCount(96);
+  border-top:1px solid #636363;
+  background:#484850;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  ul li{
+    list-style:none;
+    float:left;
+    a{
+      display:block;
+      text-decoration:none;
+      width:pxCount(128);
+      height:pxCount(96);
+      img{
+        display:block;
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+}

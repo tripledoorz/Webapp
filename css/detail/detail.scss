@@ -1,0 +1,88 @@
+$body:100%;
+$basePx:640;
+@function px($px){
+	@return $px/$basePx+rem;
+}
+*{margin:0;padding:0}
+body{
+	font-family:'微软雅黑';
+	font-size:16px;
+}
+@media screen and(min-width:320px){
+	font-size:16px;
+}
+@media screen and(min-width:480px){
+	font-size:24px;
+}
+ul li{
+	list-style-type:none;
+}
+header, footer {
+  width: 100%;
+  position: absolute; 
+}
+header{
+	top:0;
+	background:#e4366b;
+	height:px(85);
+	font-size:px(40);
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	line-height:px(85);
+	button{
+		width:px(110);
+		height:px(55);
+		font-size:px(20);
+		position:absolute;
+		top:px(14);
+		right:px(13);
+		border-radius:20px;
+		border:1px solid #ccc;
+		background:url(../../img/login1.jpg) repeat-x;
+		background-size:100% 100%;
+		color:white;
+		outline:none;
+	}
+	span{
+		font-size:px(60);
+	}
+	p{
+		width:px(52);
+		height:px(56);
+		position:absolute;
+		left:px(18);
+		top:px(14);
+		background:url(../../img/login2.jpg) no-repeat center;
+		background-size:100% 100%;
+	}
+}
+section{
+	width:100%;
+	position:absolute;
+	top:px(85);
+	bottom:px(98);
+	font-size:px(16);
+	#top{
+		height:px(85);
+		width:100%;
+		background:black;
+	}
+	#middle{
+		width:100%;
+		height:px(830);
+		background:#f7f7f7;
+		padding-top:px(40);
+		.pic{
+			width:px(440);
+			height:px(370);
+			background:white;
+			margin-left:px(100);
+		}
+	}
+}
+footer{
+	bottom:0;
+	background:#999;
+	height:px(98);
+}

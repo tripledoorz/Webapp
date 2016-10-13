@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: '微软雅黑';
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  font-size: 16px; }
+@media screen and (min-width: 480px) {
+  font-size: 24px; }
+ul li {
+  list-style-type: none; }
+
+header, footer {
+  width: 100%;
+  position: absolute; }
+
+header {
+  top: 0;
+  background: #e4366b;
+  height: 0.13281rem;
+  font-size: 0.0625rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.13281rem; }
+  header button {
+    width: 0.17188rem;
+    height: 0.08594rem;
+    font-size: 0.03125rem;
+    position: absolute;
+    top: 0.02188rem;
+    right: 0.02031rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: url(../../img/login1.jpg) repeat-x;
+    background-size: 100% 100%;
+    color: white;
+    outline: none; }
+  header span {
+    font-size: 0.09375rem; }
+  header p {
+    width: 0.08125rem;
+    height: 0.0875rem;
+    position: absolute;
+    left: 0.02813rem;
+    top: 0.02188rem;
+    background: url(../../img/login2.jpg) no-repeat center;
+    background-size: 100% 100%; }
+
+section {
+  width: 100%;
+  position: absolute;
+  top: 0.13281rem;
+  bottom: 0.15313rem;
+  font-size: 0.025rem; }
+  section #top {
+    height: 0.13281rem;
+    width: 100%;
+    background: black; }
+  section #middle {
+    width: 100%;
+    height: 1.29688rem;
+    background: #f7f7f7;
+    padding-top: 0.0625rem; }
+    section #middle .pic {
+      width: 0.6875rem;
+      height: 0.57813rem;
+      background: white;
+      margin-left: 0.15625rem; }
+
+footer {
+  bottom: 0;
+  background: #999;
+  height: 0.15313rem; }
+
+/*# sourceMappingURL=detail.css.map */
